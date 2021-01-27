@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Form from "./Components/Form";
@@ -8,12 +8,22 @@ const initialform = {
    name: "",
    email: "",
    password: "",
+   role: "",
+   agreed: false,
+};
+
+const initialerrors = {
+   name: "",
+   email: "",
+   password: "",
+   role: "",
    agreed: false,
 };
 
 function App() {
    const [formvalues, setFormvalues] = useState(initialform);
    const [users, setUsers] = useState([]);
+   const [errors, setErrors] = useState(initialerrors);
 
    return (
       <ChakraProvider>
@@ -24,6 +34,8 @@ function App() {
                users={users}
                setUsers={setUsers}
                initialform={initialform}
+               errors={errors}
+               setErrors={setErrors}
             />
             <div className="userlist">
                <p> User List: </p>
