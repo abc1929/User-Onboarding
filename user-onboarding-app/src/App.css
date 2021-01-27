@@ -32,3 +32,15 @@
 .waitingtext {
    font-size: 2.5rem;
 }
+
+.usercard {
+   cursor: default;
+   transition: 0.1s;
+}
+
+.usercard:hover {
+   opacity: 0.88;
+   transition: 0.1s;
+   color: black;
+   background-color: #dce6e6;
+}
