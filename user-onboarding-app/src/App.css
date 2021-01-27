@@ -1,0 +1,25 @@
+.content {
+   text-align: left;
+   display: flex;
+   justify-content: space-around;
+   margin: 10% 10%;
+}
+
+.userlist {
+   margin-left: 15%;
+   width: 50vw;
+}
+
+.mainform {
+   /* width: 50%; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50vw;
+}
+
+.mainform Input {
+   margin: 1vh;
+   width: 24vw;
+}
